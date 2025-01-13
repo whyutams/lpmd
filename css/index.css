@@ -1,0 +1,47 @@
+.ko {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.row {
+    margin-bottom: 30px;
+}
+
+.row .col-md-6 {
+    margin: auto;
+}
+
+.row .col-md-6 img {
+    margin: auto;
+    border-radius: 20px;
+    float: right;
+}
+
+.mybtn-login, .mybtn-login:active, .mybtn-login:focus, .mybtn-login::before {
+    width: 100px;
+    background-color: #fff !important;
+    color: var(--prim-color) !important;
+    border-color: transparent !important;
+    border-width: 1px;
+    border-radius: 25px;
+    box-shadow: none !important;
+    outline: none !important;
+    transition: 0.3s;
+}
+
+.mybtn-login:hover {
+    /* background-color: #c6c6c6 !important; */
+    color: var(--prim-color) !important;
+    /* border-color: #c6c6c6 !important; */
+}
+
+.mybtn-login {
+    position: relative;
+    float: left !important;
+}
+
+.cont .container table td,
+th {
+    /* font-size: small; */
+    overflow: hidden;
+}

@@ -1,0 +1,211 @@
+:root {
+    --prim-color: rgb(71, 71, 213);
+    --prim-color-dark: rgb(48, 48, 198);
+    --prim-color2: rgb(90, 90, 224);
+    --secon-color: rgb(56, 56, 174);
+}
+
+/* @import url('https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i&subset=greek-ext'); */
+@font-face {
+    font-family: "Noto Sans";
+    src: url("../font/NotoSans-Regular.ttf");
+}
+
+* {
+    transition: 0.3s;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+::-moz-selection {
+    color: #fff;
+    background: var(--secon-color);
+}
+
+::selection {
+    color: #fff;
+    background: var(--secon-color);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container:not(.navbar .container) {
+    animation-name: general1;
+    animation-duration: 0.2s;
+}
+
+.address-top,
+footer {
+    color: #fff;
+    font-size: small;
+}
+
+.address-top {
+    background-color: var(--secon-color);
+}
+
+footer {
+    background-color: #424242;
+}
+
+.navbar {
+    background-color: var(--prim-color);
+    background-image: linear-gradient(to left, var(--prim-color), var(--prim-color2));
+    padding-left: 20px;
+    padding-right: 20px;
+    box-shadow: 0px 5px 10px #0000004d;
+}
+
+.navbar .nav-item {
+    margin-left: 10px;
+    z-index: 2;
+}
+
+.bg {
+    background-image: url('../img/banner.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 40vh;
+    filter: brightness(0.9);
+    z-index: -1;
+    animation-name: bg;
+    animation-duration: 1s;
+}
+
+.navbar .nav-item:not(.btnn):hover {
+    transform: translateY(-1px);
+}
+
+/* .navbar .nav-link.active {
+    border: solid #fff 1px;
+    border-radius: 10px;
+} */
+
+.navbar:hover {
+    color: #fff !important;
+    text-decoration: none !important;
+    background-color: #c82020 !important;
+}
+
+.modal input,
+.cont .konten .container .ko .cik input {
+    box-shadow: none !important;
+    outline: none !important;
+    border-color: #eee;
+}
+
+.modal input:focus,
+.cont .konten .container .ko .cik input:focus {
+    box-shadow: none !important;
+    outline: none !important;
+    border-color: var(--prim-color);
+}
+
+.modal textarea {
+    box-shadow: none !important;
+    outline-color: none !important;
+    border-color: #eee;
+}
+
+.modal textarea:focus {
+    box-shadow: none !important;
+    outline-color: none !important;
+    border-color: var(--prim-color);
+}
+
+.modal select {
+    box-shadow: none !important;
+    outline-color: none !important;
+    border-color: #eee;
+}
+
+.modal select:focus {
+    box-shadow: none !important;
+    outline-color: none !important;
+    border-color: var(--prim-color);
+}
+
+p {
+    font-size: 20px;
+}
+
+.konten {
+    margin-top: 50px;
+}
+
+.cont .container .tres {
+    overflow-x: auto;
+}
+
+.gambar {
+    border-radius: 10px !important;
+    cursor: alias;
+}
+
+#lpmd-print th, #lpmd-print td {
+    border: solid 1px #000;
+}
+
+/* Button */
+.btn-primary,
+.btn-primary:active,
+.btn-primary:focus,
+.btn-primary::before {
+    width: auto;
+    border-width: 1px;
+    border-color: transparent !important;
+    border-radius: 10px;
+    box-shadow: none !important;
+    outline: none !important;
+    transition: 0.3s;
+    background-color: var(--prim-color) !important;
+    margin: 3px;
+}
+
+.btn-primary:hover {
+    /* background-color: var(--prim-color-dark) !important; */
+    filter: brightness(80%);
+}
+
+.btn-secondary {
+    width: auto;
+    border-width: 1px;
+    border-color: transparent !important;
+    border-radius: 10px;
+    box-shadow: none !important;
+    outline: none !important;
+    transition: 0.3s;
+    margin: 3px;
+}
+
+.mybtn-danger,
+.mybtn-danger:active,
+.mybtn-danger:focus,
+.mybtn-danger::before {
+    background-color: var(--red) !important;
+}
+
+
+@keyframes bg {
+    from {
+        height: 37vh;
+    }
+
+    to {
+        height: 40vh;
+    }
+}
+
+@keyframes general1 {
+    from {
+        opacity: 0%;
+        transform: translateY(-3px);
+    }
+    
+    to {
+        transform: translateY(0px);
+        opacity: 100%;
+    }
+}
